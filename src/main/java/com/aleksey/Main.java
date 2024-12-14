@@ -1,20 +1,21 @@
 package com.aleksey;
 
-import com.aleksey.abstract_factory.Button;
-import com.aleksey.abstract_factory.CheckBox;
-import com.aleksey.abstract_factory.GUIFactory;
-import com.aleksey.abstract_factory.windows.WindowsFactory;
-import com.aleksey.factory_method.ButtonFactory;
-import com.aleksey.factory_method.LinuxButtonFactory;
-import com.aleksey.factory_method.WinButtonFactory;
+import com.aleksey.bridge.*;
+import com.aleksey.composite.CompoundSoldiers;
+import com.aleksey.composite.FootSoldier;
+import com.aleksey.composite.Mariner;
+import com.aleksey.composite.Soldier;
+import com.aleksey.decorator.*;
+import com.aleksey.facade.Facade;
+import com.aleksey.fly_weight.Tree;
+import com.aleksey.fly_weight.TreeFlyWeightFactory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        GUIFactory factory = new WindowsFactory();
-        Button button = factory.createButton();
-        CheckBox checkBox = factory.createCheckBox();
-        button.display();
-        checkBox.draw();
+
     }
 
 //    public static ButtonFactory createButtonFactory(String os) {
