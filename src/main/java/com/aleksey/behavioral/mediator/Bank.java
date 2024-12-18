@@ -13,12 +13,7 @@ public class Bank implements Mediator {
     }
 
     @Override
-    public void takeMoney(User user, int money) {
+    public void remittance(User user, int money) {
         System.out.println(sender.getName() + " отправил Клиенту " + user.getName() + " перевод: " + money + "р.");
-    }
-
-    @Override
-    public void giveMoney(User user) {
-        System.out.println("Клиент " + user.getName() + " получил перевод");
     }
 }

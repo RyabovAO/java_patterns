@@ -11,12 +11,12 @@ public class Sender implements User {
 
     @Override
     public void sendMoney(User name, int money) {
-        mediator.takeMoney(name, money);
+        mediator.remittance(name, money);
     }
 
     @Override
     public void getMoney() {
-        mediator.giveMoney(this);
+        System.out.println("Клиент " + this.name + "получил перевод");
     }
 
     @Override
